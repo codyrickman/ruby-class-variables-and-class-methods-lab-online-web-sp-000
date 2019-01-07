@@ -16,10 +16,10 @@ class Song
     return @@count
   end
   def artists
-    return @@artists.uniq
+    return @@artists.uniq!
   end
   def genres
-    return @@genres.uniq
+    return @@genres.uniq!
   end
   def genre_count
 
