@@ -22,7 +22,7 @@ class Song
     return @@genres.uniq
   end
   def self.genre_count
-    array = []
+    array = {}
     u_genres = @@genres.uniq
     u_genres.each do |genre|
       array[genre] = @@genres.count(genre)
