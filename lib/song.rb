@@ -25,7 +25,7 @@ class Song
     array = []
     u_genres = @@genres.uniq
     u_genres.each do |genre|
-      array[genre] << @@genres.count(genre)
+      array[genre] = @@genres.count(genre)
     end
     return array
   end
