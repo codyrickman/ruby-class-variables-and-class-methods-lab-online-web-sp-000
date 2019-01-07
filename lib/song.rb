@@ -30,6 +30,10 @@ class Song
     return array
   end
   def self.artist_count
-
+    array = {}
+    u_artists = @@artists.uniq
+    u_artists.each do |artist|
+      array[artist] = @@artists.count(artist)
+    end
   end
 end
