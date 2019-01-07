@@ -16,9 +16,9 @@ class Song
     return @@count
   end
   def artists
-    return @@artists
+    return @@artists.unique
   end
   def genres
-    return @@genres
+    return @@genres.unique
   end
 end
