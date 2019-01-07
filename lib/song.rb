@@ -35,5 +35,6 @@ class Song
     u_artists.each do |artist|
       array[artist] = @@artists.count(artist)
     end
+    return array
   end
 end
